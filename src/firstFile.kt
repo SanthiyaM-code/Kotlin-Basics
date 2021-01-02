@@ -1,14 +1,13 @@
 fun main(args :Array<String>)
 {
-   //if else expressions
+    val a:Int=5;
+    when(a){
+        1->print("One")
+        2->print("Two")
+        3->print("Three")
+        else->print("More than three")
 
-    var a:Int=5;
+    }
 
-
-    var result:String=if (a%2==0)
-        "even"
-    else
-        "odd"
-    print("$a is of type $result")
 }
 
