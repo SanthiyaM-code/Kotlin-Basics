@@ -1,14 +1,17 @@
+import java.util.*
+
 fun main(args :Array<String>)
 {
-    val a:Int=5;
-    var  result = when(a){
-        1->"One"
-        2->"Two"
-        3->"Three"
-        else->"More than three"
+    var student=TreeMap<String,Int>()
 
+    student["Santhiya"]=501
+    student["Srimathi"]=502
+
+    for((name,rollno) in student)
+    {
+        println("$name,$rollno")
     }
-    print("$a is $result")
+
 
 }
 
