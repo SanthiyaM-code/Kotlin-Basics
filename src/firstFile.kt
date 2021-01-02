@@ -1,13 +1,14 @@
 fun main(args :Array<String>)
 {
     val a:Int=5;
-    when(a){
-        1->print("One")
-        2->print("Two")
-        3->print("Three")
-        else->print("More than three")
+    var  result = when(a){
+        1->"One"
+        2->"Two"
+        3->"Three"
+        else->"More than three"
 
     }
+    print("$a is $result")
 
 }
 
