@@ -1,16 +1,15 @@
-import java.util.*
-
-fun main(args :Array<String>)
+fun main(args:Array<String>)
 {
-    var student=TreeMap<String,Int>()
-
-    student["Santhiya"]=501
-    student["Srimathi"]=502
-
-    for((name,rollno) in student)
+    var values:List <Int> =  listOf<Int>(8,2,5,5,7,6)
+    for (i in values)
     {
-        println("$name,$rollno")
+        print("$i ")
     }
+    println(values[2])
+    println(values.get(1))
+    println(values.indexOf(5))
+    println(values.lastIndexOf(5))
+
 
 
 }
