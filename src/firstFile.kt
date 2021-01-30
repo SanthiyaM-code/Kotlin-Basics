@@ -1,23 +1,18 @@
+import java.util.*
+
 fun main(args:Array<String>)
 {
-    var values:MutableList <Int> =  mutableListOf<Int>(8,2,5,5,7,6)
-    for (i in values)
-    {
-        print("$i ")
-    }
-    values.add(1)
-    values.add(2)
-    values.add(3)
+    var sc=Scanner(System.`in`)
+    println("Enter a")
+    var a:Int=sc.nextInt()
+    println("Enter b")
+    var b:Int=sc.nextInt()
+    println("Multiplication of $a and $b is ${multiplication(a,b)} ")
 
+}
 
-    println(values[2])
-    println(values.get(1))
-    println(values.indexOf(5))
-    println(values.lastIndexOf(5))
-    for (i in values)
-    {print("$i ")}
-
-
-
+fun multiplication(a:Int,b:Int):Int
+{
+    return a*b
 }
 
