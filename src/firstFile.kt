@@ -1,7 +1,7 @@
 import java.util.*
 
 //Scope Function
-//with- return lambda and context is this
+//also- return context and context is it
 class Person
 {
     var name:String=""
@@ -11,9 +11,9 @@ class Person
 
 fun main()
 {
-    val p=Person().apply {
-        name="Sandy"
-        dept="CSE"
+    val p=Person().also{
+        it.name="Sandy"
+        it.dept="CSE"
     }
     with(p){
         println(name)
