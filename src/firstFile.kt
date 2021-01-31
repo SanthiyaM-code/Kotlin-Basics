@@ -1,18 +1,24 @@
 import java.util.*
 
-fun main(args:Array<String>)
-{
-    var sc=Scanner(System.`in`)
-    println("Enter a")
-    var a:Int=sc.nextInt()
-    println("Enter b")
-    var b:Int=sc.nextInt()
-    println("Multiplication of $a and $b is ${multiplication(a,b)} ")
+//Scope Function
+//with- return lambda and context is this
 
+fun main()
+{
+    val p=Person()
+    val nameAndDept:String=with(p){
+        println(name)
+        println(dept)
+        "I am $name from $dept"
+    }
+
+    println(nameAndDept)
 }
 
-fun multiplication(a:Int,b:Int):Int
+class Person
 {
-    return a*b
+    var name:String="Santhiya"
+    var dept:String="CSE"
 }
+
 
