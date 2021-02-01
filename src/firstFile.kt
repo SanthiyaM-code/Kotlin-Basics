@@ -1,23 +1,9 @@
 import java.util.*
-//Scope Function
-//let- return context and context is it
-class Student
-{
-    lateinit var name:String
-     fun Intoduction()
-     {
-         name="Santhiya"
-         println("My name is $name")
-     }
-
-}
-
+val pi:Float by lazy { 3.14f }
 fun main()
 {
-
-    var stu= Student()
-    stu.Intoduction()
-
+    var r:Int=25
+    println("Perimeter of the cicle is ${pi*2*r}")
 
 
 }
